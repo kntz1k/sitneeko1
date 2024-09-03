@@ -1,0 +1,161 @@
+/* Reset básico */
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: url('images/wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background: rgb(0, 0, 0);
+    color: #ff0000;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.img-header {
+    width: 100px;
+    height: 100px;
+}
+
+header h1 {
+    color: pink;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.grid-Farme{
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+}
+
+.hero-image {
+    width: 40vh;
+    height: 40vh;
+    border-radius: 8px;
+}
+
+.hero-text {
+    padding: 1rem;
+}
+
+.hero-text h2 {
+    font-size: 1.8rem;
+}
+
+.tierlist h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.tierlist p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.tierlist-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tierlist-item {
+    text-align: center;
+}
+
+.tierlist-item img {
+    width: 650px;
+    max-width: 1500px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.grid-Farme h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.Farme {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.Farme img {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
+.Farme-text {
+    max-width: 600px;
+}
+
+footer {
+    background: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.lulu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lulu-kog {
+    width: 450px;
+    height: auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tierlist-grid {
+        grid-template-columns: 1fr;
+    }
+}
